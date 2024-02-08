@@ -34,6 +34,13 @@
 	};
 </script>
 
+<h1 class="text-3xl font-bold mb-4">Using Validators</h1>
+
+<p class="mb-3">
+	The library includes a set of built-in validators that you can use to validate your form fields
+	very easy.
+</p>
+
 <form on:submit={onSubmit} novalidate>
 	<div class="mb-3">
 		<label for="exampleInputEmail1" class="form-label">Name</label>

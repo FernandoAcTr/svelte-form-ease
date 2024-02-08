@@ -42,6 +42,17 @@
 	};
 </script>
 
+<h1 class="text-3xl font-bold mb-4">Basic Usage</h1>
+
+<p class="mb-3">
+	This is the simplest way to use this library. You can use the <code>createForm</code> function to
+	get a bunch of utilities to manage your form. You can use the <code>formData</code> store to get
+	the current value of the form, the <code>validateForm</code> function to validate the form, the
+	<code>errors</code>
+	store to get the current errors of the form, the <code>resetForm</code> function to reset the form
+	and the <code>loading</code> store to manage the loading state of the form.
+</p>
+
 <form on:submit={onSubmit} novalidate>
 	<div class="mb-3">
 		<label for="exampleInputEmail1" class="form-label">Name</label>

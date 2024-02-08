@@ -43,6 +43,13 @@
 	};
 </script>
 
+<h1 class="text-3xl font-bold mb-4">Form Component</h1>
+
+<p class="mb-3">
+	The library includes a form component that you can use to manage your form. It manage for you the
+	loading state, the prevent default and the validation of the form.
+</p>
+
 <Form {onSubmit} form={{ ...form, loading }} resetAfterSubmit>
 	<div class="mb-3">
 		<label for="exampleInputEmail2" class="form-label">Name</label>

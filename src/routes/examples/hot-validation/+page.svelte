@@ -42,6 +42,13 @@
 	};
 </script>
 
+<h1 class="text-3xl font-bold mb-4">Hot Validations</h1>
+
+<p class="mb-3">
+	Hot Validations occurs when the user leaves the input field and you can show the error message
+	immediately.
+</p>
+
 <form on:submit={onSubmit} novalidate>
 	<div class="mb-3">
 		<label for="exampleInputEmail2" class="form-label">Name</label>

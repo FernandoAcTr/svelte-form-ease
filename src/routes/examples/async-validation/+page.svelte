@@ -60,6 +60,13 @@
 	};
 </script>
 
+<h1 class="text-3xl font-bold mb-4">Async Validations</h1>
+
+<p class="mb-3">
+	An async validation is a validation that needs to be checked in an external service, form example
+	a backend, that could be delay some time. For example, checking if an email
+</p>
+
 <form on:submit={onSubmit} novalidate>
 	<div class="mb-3">
 		<label for="exampleInputEmail2" class="form-label">Name</label>
