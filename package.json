@@ -54,5 +54,13 @@
 	},
 	"svelte": "./dist/index.js",
 	"types": "./dist/index.d.ts",
-	"type": "module"
+	"type": "module",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/FernandoAcTr/svelte-form-ease"
+	},
+	"keywords": [
+		"svelte",
+		"form"
+	]
 }
