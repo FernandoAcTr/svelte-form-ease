@@ -40,6 +40,10 @@
 			resetForm();
 		}, 1000);
 	};
+
+	const reset = () => {
+		resetForm();
+	};
 </script>
 
 <h1 class="text-3xl font-bold mb-4">Basic Usage</h1>
@@ -101,4 +105,5 @@
 		{/if}
 	</div>
 	<button type="submit" class="btn btn-primary" disabled={$loading}> Submit </button>
+	<button type="button" class="btn btn-primary" on:click={reset}> Reset </button>
 </form>
