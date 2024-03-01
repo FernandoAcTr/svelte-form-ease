@@ -17,7 +17,7 @@ export function createForm<T>(options: FormOptions<T>) {
 	const loading = writable(false);
 	const formData = writable<T>({ ...options.data });
 	const errors = writable<Errors<T>>({} as Errors<T>);
-	const valid = writable<boolean>(false);
+	const valid = writable<boolean>(true);
 
 	const resetForm = () => {
 		formData.set({ ...data });
@@ -27,7 +27,7 @@ export function createForm<T>(options: FormOptions<T>) {
 	};
 
 	const validateForm = () => {
-		if (!validations || Object.keys(validations).length === 0) return;
+		if (!validations || Object.keys(validations).length === 0) return false;
 
 		let isValid = true;
 		const _errors: any = {};
