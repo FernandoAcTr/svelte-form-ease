@@ -87,7 +87,7 @@ const onSubmit = (e: Event) => {
   //Here formData contains valid data
 }
 
-<form on:submit={onSubmit} novalidate>
+<form {onSubmit} novalidate>
 	<div class="mb-3">
 		<label for="exampleInputEmail1" class="form-label">Name</label>
 		<input type="text" class="form-control" id="exampleInputEmail1" bind:value={$formData.name} />
@@ -233,7 +233,7 @@ let { formData, validateForm, errors, resetForm, loading, validateInput } = crea
     }
 });
   
-<form on:submit={onSubmit} novalidate>
+<form {onSubmit} novalidate>
 	<div class="mb-3">
 		<label for="exampleInputEmail2" class="form-label">Name</label>
 		<input
@@ -353,7 +353,7 @@ let onSubmit = (event: Event) => {
 
     setTimeout(() => {
         alert(JSON.stringify(get(formData)));
-        loading.set(true); //<- Stop loading
+        loading.set(false); //<- Stop loading
         resetForm();
     }, 1000);
 };
